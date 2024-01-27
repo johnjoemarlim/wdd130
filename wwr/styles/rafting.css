@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&family=Righteous&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&family=Righteous&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root {
     --primary-color: #1E1B18;
     --secondary-color: #0A2463;
@@ -13,26 +19,32 @@
     --nav-hover-link-color:var(--accent2-color);
     --nav-hover-background-color:var(--secondary-color);
 }
+/** main {
+    max-width: 800px;
+    margin: 1rem 1rem;
+} **/
 body {
     font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
+    padding: 0 6rem;
+
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    padding: 20px 0;
 }
 header {
     padding: 20px;
     background-color: var(--accent2-color);
 }
 p {
-    padding: 25px;
+    padding: 20px;
 }
 nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    font-family: 'Righteous', sans-serif;
 }
 nav a {
     display: block;
@@ -47,3 +59,47 @@ nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
+section img {
+    padding: 40px;
+}
+.hero {
+    position: relative;
+}
+.hero img {
+    display: block;
+    width: 88%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero article {
+    position: absolute;
+    top: 70px;
+    padding: 0 80px;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 10px 15%;
+    color: white;
+    
+}
+.hero h1 {
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    background: rgb(255, 255, 255, 0.5);
+    padding: 4px;
+    position: absolute;
+}
+.hero article img {
+    width: 25%;
+    height: auto;
+    float: right;
+    padding-top: 20px;
+}
+/*Class Selectors*/
+
+
+/* .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+} */
