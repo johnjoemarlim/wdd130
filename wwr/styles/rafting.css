@@ -26,6 +26,7 @@
 body {
     font-family: var(--paragraph-font);
     padding: 0 6rem;
+    
 
 }
 h1, h2, h3, h4, h5, h6 {
@@ -36,21 +37,30 @@ h1, h2, h3, h4, h5, h6 {
 header {
     padding: 20px;
     background-color: var(--accent2-color);
+    justify-content: space-evenly;
+}
+header img {
+    grid-column: 1/2;
+    /* align-items: center;
+    justify-items: center; */
 }
 p {
-    padding: 20px;
+    padding: 10px 20px;
 }
 nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
     font-family: 'Righteous', sans-serif;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-column: 2/3;
 }
 nav a {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
-    padding: 1rem;
+    padding: 2rem;
 }
 nav a:link, nav a:visited {
     color: var(--nav-link-color);
@@ -59,8 +69,29 @@ nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
-section img {
-    padding: 40px;
+/* section img {
+    padding: 10px;
+    max-width: 200px;
+} */
+figcaption {
+    text-align: center;
+}
+
+section h2, section p {
+    text-align: center;
+}
+footer {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* footer nav a img {
+    width: 100%;
+    height: auto;
+} */
+footer nav a {
+    padding: 0.5rem;
 }
 .hero {
     position: relative;
@@ -71,6 +102,7 @@ section img {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    
 }
 .hero article {
     position: absolute;
@@ -95,6 +127,21 @@ section img {
     float: right;
     padding: 10px 0;
 }
+.grid {
+    display: grid;
+}
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-box img {
+    padding: 5px;
+    max-width: 250px;
+    flex-shrink: 1;
+    /* flex: 5%; */
+}
+
 /*Class Selectors*/
 
 
