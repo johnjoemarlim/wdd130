@@ -35,22 +35,27 @@ form {
     border-radius: 0.5rem;
 }
 
-ol {
+/* ol {
     margin: 0 auto;
     display: grid;
 }
 
 li {
-    /* margin: 1rem auto; */
+    margin: 1rem auto;
     padding: 0.5rem;
 }
 
 ol li::marker {
     color: #1F1481;
-}
+} */
 
 label, input, textarea, select, button {
     font-family: 'Righteous', Arial, Helvetica, sans-serif;
+}
+
+span {
+    color: #1F1481;
+    font-weight: bold;
 }
 
 label {
@@ -65,7 +70,7 @@ input, select, textarea {
     margin: 0.5rem 0;
 }
 
-li p {
+div p {
     padding: 0.5rem;
     font-size: 0.8em;
     background-color: rgba(0, 0, 0, 0.185);
