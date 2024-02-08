@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+Bengali&family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Archivo Black', sans-serif, 'Righteous';
+    background: #fff;
+    font-size: 1em;
+    color: black;
+}
+
+header {
+    margin: 1rem auto;
+    width: 700px;
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+    font-size: 1.5em;
+    margin: 0.5rem;
+}
+
+form {
+    width: 700px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius: 0.6rem;
+    background-color: rgba(135, 207, 235, 0.396);
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.4rem;
+    margin: 1rem;
+    border: 1px solid darkblue;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+legend {
+    font-size: 1.2em;
+    padding: 0.5rem;
+    color: black;
+}
+
+label, input, button, select, textarea {
+    font-family: 'Noto Sans Bengali', Arial, Helvetica;
+}
+
+label {
+    text-align: right;
+    padding-right: 0.5rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    vertical-align: bottom;
+}
+
+label[for="feedback"] {
+    /* text-align: center; */
+    margin: 1rem auto;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    width: 300px;
+    margin: 0 auto;
+    font-weight: bold;
+    background-color: aliceblue;
+    border: 2px solid darkblue;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    color: red;
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+    margin: 0.5rem auto 0;
+    width: 600px;
+    border-top: 2px solid darkblue;
+    color: darkblue;
+    font-size: 0.9em;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem auto;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem 0;
+}
