@@ -109,6 +109,119 @@ footer {
 footer nav a {
     padding: 0.5rem;
 }
+
+form {
+    border: 2px solid black;
+    margin: 5px auto;
+    width: 500px;
+    border-radius: 0.8rem;
+    display: grid;
+    padding: 1rem;
+    /* justify-content: center;
+    text-align: center; */
+    align-items: center;
+    background-color: rgba(135, 207, 235, 0.367);
+}
+
+label, input, textarea, button, form p {
+    font-family: 'Righteous', Arial, Helvetica, sans-serif;
+}
+
+form div p {
+    text-align: left;
+    padding: 1rem 0 0;
+    grid-column: 1/3;
+}
+
+form div {
+    display: grid;
+    align-items: center;
+}
+
+input[type="radio"] {
+    grid-column: 1/2;
+    justify-self: right;
+}
+
+input[type="radio"]:hover, .radiodiv label:hover {
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    justify-self: left;
+    width: 15px;
+    height: 15px;
+}
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+button {
+    width: 200px;
+    margin: 1rem auto;
+    font-size: larger;
+    padding: 5px;
+    border: none;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 10px black;
+    background-color: #0A2463;
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 0, 0.423);
+    color: black;
+    cursor: pointer;
+}
+
+.checkboxdiv {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+    align-items: center;
+}
+
+.checkboxdiv label {
+    padding-right: 5px;
+    font-size: smaller;
+    justify-self: right;
+}
+
+.textareadiv {
+    grid-template-columns: 1fr 3fr 0.5fr;
+}
+
+.textareadiv label {
+    grid-column: 1/2;
+    align-self: start;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.textareadiv textarea {
+    grid-column: 2/3;
+}
+
+.radiodiv input, textarea {
+    margin: 0.5rem 0;
+}
+
+.userdetails {
+    grid-template-columns: 1fr 2fr 0.5fr;
+    margin: 5px 0;
+}
+
+.userdetails label {
+    text-align: right;
+    padding-right: 10px;
+}
+.radiodiv label {
+    grid-column: 2/3;
+}
+
+.radiodiv {
+    grid-template-columns: 1fr 2fr;
+}
 .hero {
     position: relative;
 }
@@ -158,10 +271,103 @@ footer nav a {
     padding: 20px;
     max-width: 250px;
     max-height: 148.48px;
-    flex-shrink: 1;
+    /* flex-shrink: 1; */
     /* flex: 5%; */
 }
 
+.contactus {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.contactus h2 {
+    grid-column: 1/3;
+}
+
+.info {
+    grid-column: 1/3;
+    /* justify-content: center; */
+    display: grid;
+    margin: 0 auto;
+}
+
+.map {
+    grid-column: 3/4;
+    grid-row: 1/5;
+    align-items: center;
+    justify-self: center;
+    align-items: center;
+}
+
+.contactus span {
+    font-weight: bold;
+}
+
+.contactus p {
+    text-align: left;
+}
+
+.employees {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* grid-template-rows: 2fr 1fr; */
+    /* border: 1px solid #0A2463; */
+    background-color: #FFFAFF;
+}
+
+.employees div {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+.employees figure {
+    padding: 1rem;
+}
+
+.employees figure img {
+    max-width: 250px;
+    max-height: 250px;
+    padding: 0;
+    box-shadow: 0 0 30px black;
+}
+
+.employees figcaption {
+    padding-top: 10px;
+}
+
+.employees h2 {
+    grid-column: 1/2;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.contactus, .employees {
+    padding: 20px 0;
+}
+/* #employee3 {
+    height: 310px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#employee3 figcaption {
+    align-self: end;
+} */
+/* #employee1 {
+    grid-column: 1/2;
+}
+
+#employee2 {
+    grid-column: 2/3;
+}
+
+#employee3 {
+    grid-column: 3/4;
+} */
 /*Class Selectors*/
 
 
