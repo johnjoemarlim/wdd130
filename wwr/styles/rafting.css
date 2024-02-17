@@ -90,9 +90,11 @@ figcaption {
 #fig1, #fig2, #fig3, #fig4, #fig5 {
     display: grid;
 }
+
 figure img {
     grid-row: 1/2;
 }
+
 section h2, section p {
     text-align: center;
 }
@@ -347,6 +349,156 @@ button:hover {
 
 .contactus, .employees {
     padding: 20px 0;
+}
+
+
+
+
+
+
+.trips {
+    display: grid;
+    padding: 20px 10px;
+}
+
+
+.trips h1 {
+    text-align: center;
+}
+
+.topsection button {
+    font-size: 40px;
+    width: 300px;
+}
+/* .trips a {
+    width: 200px;
+    justify-self: center;
+    text-decoration: none;
+} */
+
+#tripsfig1 {
+    grid-column: 1/2;
+}
+
+#tripsfig2 {
+    grid-column: 2/3;
+}
+
+#tripsfig3 {
+    grid-column: 3/4;
+}
+
+.tripsfig {
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-row: 1/2;
+}
+
+.tripsfig img {
+    justify-self: center;
+}
+
+.tripname {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+.tripA {
+    grid-column: 1/2;
+    justify-self: center;
+}
+
+.tripB {
+    grid-column: 2/3;
+    justify-self: center;
+}
+
+.tripB p {
+    border-left: 1px solid #0A2463;
+    border-right: 1px solid #0A2463;
+}
+
+.tripC {
+    grid-column: 3/4;
+    justify-self: center;
+}
+
+.left-align p {
+    text-align: left;
+}
+
+.left-align {
+    width: 75%;
+}
+
+aside {
+    float: right;
+    width: 20%;
+    padding: 10px;
+    margin-left: 15px;
+    margin-top: 20px;
+    border: 1px solid #0A2463;
+    border-radius: 0.5rem;
+}
+
+aside h2 {
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+aside p {
+    text-align: left;
+    border-bottom: 0.5px solid #0A2463;
+}
+
+table {
+    border-collapse: collapse;
+    border:2px solid #0A2463;
+    letter-spacing: 1px;    
+}
+
+caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+}
+
+th, td {
+    border:1px solid #0A2463;
+    padding: 8px 20px;
+}
+
+td p {
+    text-align: left;
+    padding: 20px 10px;
+}
+
+td span, th {
+    font-weight: bold;
+}
+
+td ul {
+    padding: 10px 20px;
+}
+
+thead {
+    font-size: 28px;
+    font-family: var(--heading-font);
+    background-color: var(--accent2-color);
+}
+
+tbody {
+    font-family: var(--paragraph-font);
+}
+
+tbody > tr:nth-of-type(even) {
+    background-color: var(--accent2-color);
+}
+
+.tablediv {
+    padding-top: 20px;
 }
 /* #employee3 {
     height: 310px;
